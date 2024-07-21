@@ -6,7 +6,7 @@ import ReactQueryClientProvider from "@/components/ReactQueryClientProvider";
 const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "React Hook Form with Next.js",
+  title: "React Hook Form with Next.JS",
   description: "Example of using React Hook Form with Next.js",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dm_sans.className}>
+      <body suppressHydrationWarning={true} className={dm_sans.className}>
         <ReactQueryClientProvider>{children}</ReactQueryClientProvider>
       </body>
     </html>
